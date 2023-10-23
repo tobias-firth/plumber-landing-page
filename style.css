@@ -1,0 +1,23 @@
+.hero{
+    background-image: url('./assets/images/hero.jpg'); /* Replace 'your-image.jpg' with your image file */
+    background-size:cover; /* Adjust as needed */
+    background-position:top; /* Adjust as needed */
+    background-color: rgba(255, 255, 255, 1); /* Background with 75% opacity */
+    width: 100%;
+
+    margin: 10px auto; /* Adjust width and height as needed */
+    height: 350px;
+    text-align: center; /* Center-align text */
+}
+.hero-content {
+    color: rgba(255, 255, 255, 1); /* Text with 100% opacity */
+    text-align: right;
+    font-size: 2.5vh;
+    width:50%;
+    float:right;
+    margin-right:1.5vh;
+}
+
+.hero-button {
+    font-size: 1.5vh;
+}
