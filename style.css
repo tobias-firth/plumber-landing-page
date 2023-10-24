@@ -1,3 +1,11 @@
+body {
+    background-color: #CDCDCD;
+}
+
+main {
+    width:100%;
+}
+
 .hero{
     background-image: url('./assets/images/hero.jpg'); /* Replace 'your-image.jpg' with your image file */
     background-size:cover; /* Adjust as needed */
@@ -20,4 +28,91 @@
 
 .hero-button {
     font-size: 1.5vh;
+}
+
+#about {
+    background-color: #B4B4B4;
+    width: 100%;
+    padding: auto;
+    height: fit-content;
+}
+
+.about-copy{
+    width:90%;
+    margin: 0 auto;
+}
+
+#testimonials {
+    width:100%;
+    height: fit-content;
+}
+
+#testimonial-container {
+    width:90%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+#testimonials h2 {
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+.testimonial {
+    height:fit-content;
+    border-radius: 15px;
+    background-color: #A7A7A7;
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+.testimonial h5 {
+    width: 85%;
+    margin: auto;
+    
+}
+
+#caption {
+    font-size:small;
+    font-style: italic;
+}
+
+
+
+dl {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	gap: 0.5rem 0;
+}
+
+dl > * {
+	background: antiquewhite;
+	padding: 1rem;
+}
+
+dl > :nth-of-type(2n) {
+	background: lavenderblush;
+}
+
+dt {
+	font-weight: 700;
+	font-size: 1.3rem;
+}
+
+dd {
+	margin: 0;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+    #testimonial-container {
+        display: flex;
+        flex-direction: row;
+    }
 }
