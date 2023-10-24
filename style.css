@@ -1,46 +1,81 @@
 body {
-    background-color: #CDCDCD;
+    background-color: transparent;
 }
 
 main {
     width:100%;
 }
 
-.hero{
-    background-image: url('./assets/images/hero.jpg'); /* Replace 'your-image.jpg' with your image file */
-    background-size:cover; /* Adjust as needed */
-    background-position:top; /* Adjust as needed */
-    background-color: rgba(255, 255, 255, 1); /* Background with 75% opacity */
+
+/* START Header Section */
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('./assets/images/hero.png');
+    background-size:cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.header-content {
+    width:60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title{
+    text-align: center;
+    color:#b0c4de;
+    filter: drop-shadow(0 0 2rem black);
+}
+.header-text {
+    color:#decab0;
+    text-align: center;
+    filter: drop-shadow(0 0 2rem black);
+}
+.sticky {
+    position: fixed;
+    top: 0;
     width: 100%;
-
-    margin: 10px auto; /* Adjust width and height as needed */
-    height: 350px;
-    text-align: center; /* Center-align text */
-}
-.hero-content {
-    color: rgba(255, 255, 255, 1); /* Text with 100% opacity */
-    text-align: right;
-    font-size: 2.5vh;
-    width:50%;
-    float:right;
-    margin-right:1.5vh;
 }
 
-.hero-button {
-    font-size: 1.5vh;
-}
+/* END Header Section */
 
+/* START About Section */
 #about {
     width: 100%;
-    padding: auto;
     height: fit-content;
 }
 
-.about-copy{
-    width:90%;
+.icon {
+    height:50%;
+    object-fit:fill;
+    
+}
+
+#about-container {
+    width: 90%;
     margin: 0 auto;
 }
 
+.about-box {
+    height:300px;
+    border-radius: 15px;
+    background-color: #A7A7A7;
+    padding: 20px;
+    min-width: 300px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-box > p,h3 {
+    text-align: center;
+}
+/* END About Section */
+
+/* START Testimonial Section */
 #testimonials {
     width:100%;
     height: fit-content;
@@ -59,57 +94,66 @@ main {
 }
 
 .testimonial {
-    height:fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:200px;
     border-radius: 15px;
     background-color: #A7A7A7;
     padding: 20px;
     min-width: 300px;
     text-align: center;
     margin: 20px;
+    width: 30%;
 }
 
 .testimonial h5 {
-    width: 85%;
-    margin: auto;
-    
+    width: 85%;    
 }
 
 #caption {
     font-size:small;
     font-style: italic;
 }
+/* END Testimonial Section */
 
 
-.icon {
-    height:200px;
-    object-fit:fill;
-    
-}
-
-#about-container {
-    width: 70%;
-    margin: 0 auto;
-}
-
-.about-box {
-    height:fit-content;
-    border-radius: 15px;
-    background-color: #A7A7A7;
-    padding: 20px;
-    min-width: 300px;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about-box > p,h3 {
-    text-align: center;
-}
 
 /* Media Queries */
 
 @media only screen and (min-width: 600px) {
+    header {
+        height: 100vh;
+        width: 100vw;
+        background-image: url('./assets/images/hero.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        
+    }
+   
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-title{
+        font-size:10rem;
+        text-align: center;
+        color:lightsteelblue;
+        filter: drop-shadow(0 0 2rem black);
+    }
+    .header-text {
+        width:80%;
+        margin: 0 auto;
+        color:white;
+        text-align: center;
+        padding:0 2vw 2vw 2vw;
+        filter: drop-shadow(0 0 2rem black);
+    }
+    
     #testimonial-container {
         display: flex;
         flex-direction: row;
@@ -119,6 +163,9 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 10px; /* Adjust the gap as needed */
+        gap: 10px;
       }
+
 }
+
+
